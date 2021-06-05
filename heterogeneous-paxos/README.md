@@ -25,3 +25,9 @@ Practical questions:
        - Maybe three-round (but can be pipelined) like HotStuff.
    - Think about proposer selection mechanism
        - We want to select the proposer from intersection of proposers for all involved chains.
+
+Other literature to consider:
+
+- [HotStuff: BFT Consensus in the Lens of Blockchain](https://arxiv.org/abs/1803.05069)
+- [Flexible Byzantine Fault Tolerance](https://arxiv.org/abs/1904.10067)
+- [Narwhal and Tusk: A DAG-based Mempool and Efficient BFT Consensus](https://arxiv.org/abs/2105.11827)
