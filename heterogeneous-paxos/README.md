@@ -1,12 +1,12 @@
-### Heterogenous Paxos x Tendermint
+### Heterogeneous Paxos x Tendermint
 
 Basic goal:
 
-Integrate the heterogenous learner graph model described in the [Heterogenous Paxos paper](https://arxiv.org/abs/2011.08253) into a new version of the Tendermint [algorithm](https://arxiv.org/abs/1807.04938) and [codebase](https://github.com/tendermint/tendermint).
+Integrate the heterogeneous learner graph model described in the [heterogeneous Paxos paper](https://arxiv.org/abs/2011.08253) into a new version of the Tendermint [algorithm](https://arxiv.org/abs/1807.04938) and [codebase](https://github.com/tendermint/tendermint).
 
 Theoretical questions:
 
-- How do we figure out when heterogenous consensus is possible, and how do we decide which to do?
+- How do we figure out when heterogeneous consensus is possible, and how do we decide which to do?
 
     We need an algorithm for taking a learner graph and condensing it to find valid learner subgraphs. The naive way of doing this is simply to generate every possible subgraph and check if each one is valid.
   Then we can prove to an on-chain state machine w/attestations from validators that specify their trust assumptions that we can construct a valid learner subgraph.
@@ -18,7 +18,7 @@ Theoretical questions:
 
 Practical questions:
 
-- Can we optimise heterogenous Paxos for some Tendermint advantages?
+- Can we optimise heterogeneous Paxos for some Tendermint advantages?
    - Message/communication complexity: improve by using leaders.
    - We need a timeout structure
        - Can we avoid the required increasing timeouts which Tendermint has?
